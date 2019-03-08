@@ -2,11 +2,14 @@
 
 #PROGRAMA PRIMO
 
-
-
 x=int(input("Introduzca un Numero: "))
+cont=0
+for i in range(2,x):
+    if x%i==0:
+        cont=cont+1
+        print("Divisor",i)
 
-for i in range(1,x+1,1):
-    res=x%i
-    print("El residuo entre ",x," y ",i," es: ",res)
-
+if cont>0:
+    print("No son primos")
+else:
+    print("El numero es primo")
