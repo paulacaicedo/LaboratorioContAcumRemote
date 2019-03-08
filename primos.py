@@ -2,10 +2,11 @@
 
 #PROGRAMA PRIMO
 
-x=int(input("Introduzca un Numero: "))
-y=int(input("Introduzca un Numero: "))
 
-if x%y==0:
-    print("Es Divisible exacto")
-else:
-    print("No son divisibles exacto")
+
+x=int(input("Introduzca un Numero: "))
+
+for i in range(1,x+1,1):
+    res=x%i
+    print("El residuo entre ",x," y ",i," es: ",res)
+
